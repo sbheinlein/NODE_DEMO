@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+<style> 
+input {
+  height:30px;
+  border:#ccc solid 1px 
+}
+input[type="text"] {
+  width:500px 
+}
+input[type="submit"] {
+  margin:1em; 
+  width:120px 
+} 
+</style>
+  <body>
+    <div class="container">
+      <fieldset>
+		<img src="logo.png" />
+		<h1>Arcad Node.js Demo</h1>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+	  <form name="input" action="query" method="get">
+        <div>SQL Command </div>
+        <input type="text" name="sql" placeholder="SELECT * FROM ..."/>
+        <input type="submit" value="Query"/>
+      </form> 
+      <form name="input" action="cmd" method="get">
+        <div>CL Command </div>
+        <input type="text" name="cl" placeholder="WRKSYSSTS"/>
+        <input type="submit" value="Run"/>
+      </form> 
+    </div>
+  </body>
+</html>
