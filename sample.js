@@ -5,8 +5,8 @@ var db = require('/QOpenSys/QIBM/ProdData/OPS/Node6/os400/db2i/lib/db2a');
 var xt = require('/QOpenSys/QIBM/ProdData/OPS/Node6/os400/xstoolkit/lib/itoolkit');
   
 var DBname = "ARCUSA01"; 
-var userId = "sheinlein";
-var passwd = "irulu7";
+var userId = "arcad_pgmr";
+var passwd = "quadra";
 var ip = "192.168.3.43"; 
 var port = 8080; 
                           
